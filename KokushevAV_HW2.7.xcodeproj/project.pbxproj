@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		8ADC2CBE2421142D00B332E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADC2CBD2421142D00B332E8 /* AppDelegate.swift */; };
 		8ADC2CC02421142D00B332E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADC2CBF2421142D00B332E8 /* SceneDelegate.swift */; };
-		8ADC2CC22421142D00B332E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADC2CC12421142D00B332E8 /* ViewController.swift */; };
 		8ADC2CC52421142D00B332E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ADC2CC32421142D00B332E8 /* Main.storyboard */; };
 		8ADC2CC72421142F00B332E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ADC2CC62421142F00B332E8 /* Assets.xcassets */; };
 		8ADC2CCA2421142F00B332E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ADC2CC82421142F00B332E8 /* LaunchScreen.storyboard */; };
+		8ADC2CD32421185500B332E8 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADC2CD22421185500B332E8 /* Person.swift */; };
+		8ADC2CD724211C3D00B332E8 /* WithViewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADC2CD624211C3D00B332E8 /* WithViewTableViewController.swift */; };
+		8ADC2CDA2421223B00B332E8 /* PersonCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADC2CD92421223B00B332E8 /* PersonCardViewController.swift */; };
+		8AF2765424213486006C1747 /* WithSectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF2765324213486006C1747 /* WithSectionTableViewController.swift */; };
+		8AF27656242141E1006C1747 /* TWWithViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF27655242141E1006C1747 /* TWWithViewTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8ADC2CBA2421142D00B332E8 /* KokushevAV_HW2.7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KokushevAV_HW2.7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ADC2CBD2421142D00B332E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8ADC2CBF2421142D00B332E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8ADC2CC12421142D00B332E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8ADC2CC42421142D00B332E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8ADC2CC62421142F00B332E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8ADC2CC92421142F00B332E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8ADC2CCB2421142F00B332E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ADC2CD22421185500B332E8 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		8ADC2CD624211C3D00B332E8 /* WithViewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithViewTableViewController.swift; sourceTree = "<group>"; };
+		8ADC2CD92421223B00B332E8 /* PersonCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCardViewController.swift; sourceTree = "<group>"; };
+		8AF2765324213486006C1747 /* WithSectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithSectionTableViewController.swift; sourceTree = "<group>"; };
+		8AF27655242141E1006C1747 /* TWWithViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWWithViewTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,35 @@
 		8ADC2CBC2421142D00B332E8 /* KokushevAV_HW2.7 */ = {
 			isa = PBXGroup;
 			children = (
+				8ADC2CD12421180200B332E8 /* Model */,
+				8ADC2CD82421201900B332E8 /* Controller */,
 				8ADC2CBD2421142D00B332E8 /* AppDelegate.swift */,
 				8ADC2CBF2421142D00B332E8 /* SceneDelegate.swift */,
-				8ADC2CC12421142D00B332E8 /* ViewController.swift */,
 				8ADC2CC32421142D00B332E8 /* Main.storyboard */,
 				8ADC2CC62421142F00B332E8 /* Assets.xcassets */,
 				8ADC2CC82421142F00B332E8 /* LaunchScreen.storyboard */,
 				8ADC2CCB2421142F00B332E8 /* Info.plist */,
 			);
 			path = KokushevAV_HW2.7;
+			sourceTree = "<group>";
+		};
+		8ADC2CD12421180200B332E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8ADC2CD22421185500B332E8 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8ADC2CD82421201900B332E8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8ADC2CD624211C3D00B332E8 /* WithViewTableViewController.swift */,
+				8ADC2CD92421223B00B332E8 /* PersonCardViewController.swift */,
+				8AF2765324213486006C1747 /* WithSectionTableViewController.swift */,
+				8AF27655242141E1006C1747 /* TWWithViewTableViewCell.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +166,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8ADC2CC22421142D00B332E8 /* ViewController.swift in Sources */,
+				8ADC2CD32421185500B332E8 /* Person.swift in Sources */,
+				8AF2765424213486006C1747 /* WithSectionTableViewController.swift in Sources */,
 				8ADC2CBE2421142D00B332E8 /* AppDelegate.swift in Sources */,
+				8ADC2CDA2421223B00B332E8 /* PersonCardViewController.swift in Sources */,
+				8AF27656242141E1006C1747 /* TWWithViewTableViewCell.swift in Sources */,
 				8ADC2CC02421142D00B332E8 /* SceneDelegate.swift in Sources */,
+				8ADC2CD724211C3D00B332E8 /* WithViewTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
