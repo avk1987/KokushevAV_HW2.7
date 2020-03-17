@@ -13,13 +13,24 @@ class TWWithViewTableViewCell: UITableViewCell {
     @IBOutlet var avatar: UIImageView!
     @IBOutlet var fullname: UILabel!
     
+    var person: Person!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        fullname.text = person.fullName
+        avatar.image = UIImage(named: person.avatar)
+        avatar.layer.cornerRadius = avatar.frame.height / 2
+        avatar.clipsToBounds = true
+    }
+    
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
     }
-
+    
 }

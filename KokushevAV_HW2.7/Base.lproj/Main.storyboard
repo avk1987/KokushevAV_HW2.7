@@ -51,31 +51,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellOnlyTitle" id="DB6-Sj-fjC" customClass="TWWithViewTableViewCell" customModule="KokushevAV_HW2_7" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="320" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellOnlyTitle" rowHeight="50" id="DB6-Sj-fjC" customClass="TWWithViewTableViewCell" customModule="KokushevAV_HW2_7" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="320" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DB6-Sj-fjC" id="w3g-7Y-eec">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="56Z-j9-gHV">
-                                            <rect key="frame" x="10" y="2" width="43.5" height="39.5"/>
+                                            <rect key="frame" x="10" y="4" width="42" height="42"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="42" id="2af-uY-Gda"/>
+                                                <constraint firstAttribute="height" constant="42" id="6qQ-q8-g0t"/>
+                                            </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3x-bx-D4b">
-                                            <rect key="frame" x="73.5" y="10.5" width="46.5" height="23"/>
+                                            <rect key="frame" x="62" y="13.5" width="46.5" height="23"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="56Z-j9-gHV" firstAttribute="height" secondItem="w3g-7Y-eec" secondAttribute="height" multiplier="0.9" id="Ke9-8G-kFo"/>
-                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="m3x-bx-D4b" secondAttribute="trailing" constant="20" symbolic="YES" id="M83-HW-iUC"/>
-                                        <constraint firstItem="m3x-bx-D4b" firstAttribute="leading" secondItem="56Z-j9-gHV" secondAttribute="trailing" constant="20" id="OCq-LW-GYd"/>
-                                        <constraint firstItem="56Z-j9-gHV" firstAttribute="leading" secondItem="w3g-7Y-eec" secondAttribute="leading" constant="10" id="Ozi-fo-LBG"/>
-                                        <constraint firstItem="56Z-j9-gHV" firstAttribute="centerY" secondItem="w3g-7Y-eec" secondAttribute="centerY" id="dXV-od-9oj"/>
-                                        <constraint firstItem="56Z-j9-gHV" firstAttribute="width" secondItem="w3g-7Y-eec" secondAttribute="height" id="mtw-Dd-XHP"/>
-                                        <constraint firstItem="m3x-bx-D4b" firstAttribute="centerY" secondItem="w3g-7Y-eec" secondAttribute="centerY" id="y1a-or-bSX"/>
+                                        <constraint firstItem="m3x-bx-D4b" firstAttribute="centerY" secondItem="w3g-7Y-eec" secondAttribute="centerY" id="8EE-bT-wke"/>
+                                        <constraint firstItem="56Z-j9-gHV" firstAttribute="leading" secondItem="w3g-7Y-eec" secondAttribute="leading" constant="10" id="Qy3-v2-3AV"/>
+                                        <constraint firstItem="m3x-bx-D4b" firstAttribute="leading" secondItem="56Z-j9-gHV" secondAttribute="trailing" constant="10" id="cAi-L7-ibq"/>
+                                        <constraint firstItem="56Z-j9-gHV" firstAttribute="centerY" secondItem="w3g-7Y-eec" secondAttribute="centerY" id="dFr-ia-Pn5"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="m3x-bx-D4b" secondAttribute="trailing" constant="20" symbolic="YES" id="fHT-Fx-7pt"/>
+                                        <constraint firstItem="56Z-j9-gHV" firstAttribute="leading" secondItem="w3g-7Y-eec" secondAttribute="leading" constant="10" id="sCE-bs-fXI"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
